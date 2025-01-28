@@ -9,12 +9,8 @@
   <p><strong>Is staff:</strong> {{ driver.is_staff }}</p>
   <div style="display: flex; gap: 50px;">
     <p><strong>License number:</strong> {{ driver.license_number }}</p>
-    <h4><a href="{% url 'taxi:license-update' pk=driver.id %}"
-       class="btn btn-info btn-sm"
-       role="button"
-    >
-      Update License
-    </a></h4>
+    <h4><<a href="{% url 'taxi:license-update' pk=driver.id %}" class="btn btn-info btn-sm">Update License</a>
+    </h4>
   </div>
 
   <div class="ml-3">

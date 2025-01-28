@@ -58,4 +58,5 @@ class DriverLicenseUpdateForm(forms.ModelForm):
         if not license_number[3:].isdigit():
             raise ValidationError("Ensure that your license_number "
                                   "has 3 letters and 5 digits after!")
+
         return license_number
